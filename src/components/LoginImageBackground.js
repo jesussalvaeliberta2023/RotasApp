@@ -1,5 +1,4 @@
 //Importações Padrão
-import { StatusBar } from "expo-status-bar";
 import { View, ImageBackground } from "react-native";
 import styles from "../styles/styleSheet";
 //Importações de Components

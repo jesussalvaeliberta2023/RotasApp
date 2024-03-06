@@ -1,5 +1,4 @@
 //Importações
-import { StatusBar } from 'expo-status-bar';
 import { View, Button } from 'react-native';
 import styles from '../styles/styleSheet';
 

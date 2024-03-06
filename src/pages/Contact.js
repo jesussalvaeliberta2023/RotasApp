@@ -1,6 +1,7 @@
 //Importações Padrão
 import { View, TextInput } from "react-native";
 import { styles } from "../styles/styleSheet";
+//Importações React Navigation
 import { useNavigation } from "@react-navigation/native";
 
 
@@ -12,6 +13,7 @@ export default function Contact() {
     
       <View style={styles.container}>
         <View style={styles.corpo}>
+
         <TextInput 
           placeholder='Nome'
           style={styles.inputs}
@@ -27,8 +29,7 @@ export default function Contact() {
           style={styles.inputs}
           inputMode='text'
         />
-
-            
+  
         </View>
       </View>
   

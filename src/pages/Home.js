@@ -1,6 +1,7 @@
 //Importações Padrão
 import { View, ImageBackground, Text, Button } from "react-native";
 import { styles } from "../styles/styleSheet";
+//Importações React Navigation
 import { useNavigation } from "@react-navigation/native";
 
 export default function Home() {

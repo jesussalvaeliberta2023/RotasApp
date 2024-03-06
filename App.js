@@ -1,7 +1,6 @@
 // Importações Stack Navigation
 import { NavigationContainer, useNavigation } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { styles } from "./src/styles/styleSheet";
 import Home from "./src/pages/Home"
 import About from "./src/pages/About"
 import Contact from "./src/pages/Contact"
@@ -17,7 +16,7 @@ export default function App() {
     <NavigationContainer>
       {/* <Stack.Navigator> = Indica a navegação em formas de pilha */}
       <Stack.Navigator>
-        {/* <Stack.Screen/> = */}
+        {/* <Stack.Screen/> = Visualizar as paginas*/}
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="About" component={About} />
         <Stack.Screen name="Contact" component={Contact} />
