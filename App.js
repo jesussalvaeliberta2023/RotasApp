@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// Importações Stack Navigation
+import { NavigationContainer, useNavigation } from "@react-navigation/native"
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { styles } from "./src/styles/styleSheet";
+import Home from "./src/pages/Home"
+import About from "./src/pages/About"
+import Contact from "./src/pages/Contact"
+import Login from "./src/pages/Login"
+
+// Criando uma instancia do Stack Navigator
+// Isso nos permite utilizar comandos para definir a navegação de aplicação
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <NavigationContainer> = Responsável para envolver as rotas da navegação
+    <NavigationContainer>
+      {/* <Stack.Navigator> = Indica a navegação em formas de pilha */}
+      <Stack.Navigator>
+        {/* <Stack.Screen/> = */}
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="About" component={About} />
+        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen name="Login" component={Login} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
