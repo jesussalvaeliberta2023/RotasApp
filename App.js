@@ -1,7 +1,7 @@
 // Importações Stack Navigation
 import { NavigationContainer, useNavigation } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-//Importações das páginas
+// Importações das páginas
 import Home from "./src/pages/Home"
 import About from "./src/pages/About"
 import Contact from "./src/pages/Contact"
@@ -14,6 +14,7 @@ const Stack = createNativeStackNavigator();
 //Exportação padrão
 export default function App() {
 
+  // Retorna e Renderiza tudo o que está dentro dele
   return (
 
     // <NavigationContainer> = Responsável para envolver as rotas da navegação

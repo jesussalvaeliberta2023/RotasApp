@@ -10,7 +10,8 @@ export default function LoginButton() {
   pressButton = () => {
     alert("Uhm essa função ainda não está pronta :' (")
   }
-
+  
+  // Retorna e Renderiza tudo o que está dentro dele
   return (
 
       <View style={styles.bodyContainer}>

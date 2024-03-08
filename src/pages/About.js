@@ -13,6 +13,7 @@ export default function About() {
   //Variável que permite que você navegue entre as telas
   const navigation = useNavigation();
 
+  // Retorna e Renderiza tudo o que está dentro dele
   return (
     
       <View style={styles.container}>

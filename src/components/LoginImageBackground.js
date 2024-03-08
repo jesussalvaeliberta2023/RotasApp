@@ -14,6 +14,8 @@ import FundoL from '../assets/images/FundoL.png'
 
 //Exportação padrão
 export default function LoginImageBackground() {
+
+  // Retorna e Renderiza tudo o que está dentro dele
   return (
 
       //Imagem de fundo

@@ -12,7 +12,9 @@ export default function Home() {
 
   const navigation = useNavigation();
 
+  // Retorna e Renderiza tudo o que está dentro dele
   return (
+
     //Imagem de fundo Home
     <ImageBackground
       source={FundoH}
@@ -29,5 +31,6 @@ export default function Home() {
       <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' />
       <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' />
     </ImageBackground>
+    
   );
 }
