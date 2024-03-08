@@ -33,9 +33,9 @@ export default function About() {
                 protagonista indiscutível. Van Gogh habilmente utiliza pinceladas expressivas e cores 
                 vibrantes para capturar a atmosfera única de uma noite estrelada.
               </Text>
-              <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' />
-              <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' />
-              <Button title="Home" onPress={() => navigation.navigate("Home")} color= 'black' />
+              <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' style={styles.buttons} />
+              <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' style={styles.buttons} />
+              <Button title="Home" onPress={() => navigation.navigate("Home")} color= 'black' style={styles.buttons} />
             </View>
             
         </View>

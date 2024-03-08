@@ -108,6 +108,10 @@ export const styles = StyleSheet.create({
     fontSize: 15,
   },
 
+  buttons: {
+    width: '100%',
+  }
+
 });
 
 //Exportação padrão

@@ -27,9 +27,9 @@ export default function Home() {
       </View>
 
       {/* Botoẽs para transitar entre as páginas */}
-      <Button title="About" onPress={() => navigation.navigate("About")} color= 'black' />
-      <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' />
-      <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' />
+      <Button title="About" onPress={() => navigation.navigate("About")} color= 'black' style={styles.buttons}/>
+      <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' style={styles.buttons}/>
+      <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' style={styles.buttons}/>
     </ImageBackground>
     
   );
