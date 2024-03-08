@@ -3,6 +3,8 @@ import { View, Text, Image } from "react-native";
 import { styles } from "../styles/styleSheet";
 //Importações React Navigation
 import { useNavigation } from "@react-navigation/native";
+//Importação Imagem
+import Quadro from '../assets/images/Quadro.jpg'
 
 
 export default function About() {
@@ -14,7 +16,7 @@ export default function About() {
         <View style={styles.corpo}>
 
             <Image
-                source={require('../styles/Quadro.jpg')}
+                source={Quadro}
                 style={styles.obra}
                 resizeMode='cover'
             />

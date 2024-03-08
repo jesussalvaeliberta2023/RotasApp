@@ -3,6 +3,8 @@ import { View, ImageBackground, Text, Button } from "react-native";
 import { styles } from "../styles/styleSheet";
 //Importações React Navigation
 import { useNavigation } from "@react-navigation/native";
+//Importação Imagem
+import FundoH from '../assets/images/FundoH.jpg'
 
 export default function Home() {
   const navigation = useNavigation();
@@ -10,7 +12,7 @@ export default function Home() {
   return (
     //Imagem de fundo
     <ImageBackground
-      source={require("../styles/Fundo.jpg")}
+      source={FundoH}
       style={styles.fundo}
     >
 

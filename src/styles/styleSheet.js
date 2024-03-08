@@ -84,11 +84,6 @@ export const styles = StyleSheet.create({
     height: 50,
   },
 
-  fundo: {
-    width:'100%',
-    height:'100%',
-  },
-
   myName: {
     color: '#0C052B',
     fontSize: 25,

@@ -5,7 +5,7 @@ import styles from "../styles/styleSheet";
 import LoginBack from "../components/LoginImageBackground";
 import { useNavigation } from "@react-navigation/native";
 
-export default function App() {
+export default function Login() {
   const navigation = useNavigation();
 
 

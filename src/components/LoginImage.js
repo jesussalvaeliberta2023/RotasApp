@@ -1,6 +1,9 @@
 //Importações
 import { View, Image } from 'react-native';
 import styles from '../styles/styleSheet';
+//Importação Imagem
+import Logo from '../assets/images/Logo.png';
+
 
 export default function LoginImage() {
 
@@ -8,7 +11,7 @@ export default function LoginImage() {
     //My Logo
     <View style={styles.headerContainer}>
       <Image
-          source={require('../styles/Logo.png')}
+          source={Logo}
           style={styles.logo}
           resizeMode='cover'
       />

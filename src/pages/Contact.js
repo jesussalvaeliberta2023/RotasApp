@@ -1,11 +1,16 @@
 //Importações Padrão
-import { View, TextInput } from "react-native";
+import { View, TextInput, Button } from "react-native";
 import { styles } from "../styles/styleSheet";
 //Importações React Navigation
 import { useNavigation } from "@react-navigation/native";
 
 
 export default function Contact() {
+
+  pressButton = () => {
+    alert("Uhm essa função ainda não está pronta :' (")
+  }
+
   const navigation = useNavigation();
 
   return (
@@ -29,7 +34,13 @@ export default function Contact() {
           style={styles.inputs}
           inputMode='text'
         />
-  
+
+        <Button
+          title='Entrar'
+          color= 'black'
+          onPress={pressButton}
+        />
+        
         </View>
       </View>
   
