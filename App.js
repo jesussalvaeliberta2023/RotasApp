@@ -1,6 +1,7 @@
 // Importações Stack Navigation
 import { NavigationContainer, useNavigation } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
+//Importações das páginas
 import Home from "./src/pages/Home"
 import About from "./src/pages/About"
 import Contact from "./src/pages/Contact"
@@ -10,8 +11,11 @@ import Login from "./src/pages/Login"
 // Isso nos permite utilizar comandos para definir a navegação de aplicação
 const Stack = createNativeStackNavigator();
 
+//Exportação padrão
 export default function App() {
+
   return (
+
     // <NavigationContainer> = Responsável para envolver as rotas da navegação
     <NavigationContainer>
       {/* <Stack.Navigator> = Indica a navegação em formas de pilha */}
@@ -23,5 +27,6 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
     </NavigationContainer>
+
   );
 }

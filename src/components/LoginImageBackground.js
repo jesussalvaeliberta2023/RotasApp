@@ -1,5 +1,6 @@
-//Importações Padrão
+//Importação padrão
 import { View, ImageBackground } from 'react-native';
+//Importação do Style
 import styles from '../styles/styleSheet';
 //Importações de Components
 import LoginButton from '../components/LoginButton';
@@ -11,6 +12,7 @@ import LoginTexttt from '../components/LoginTF';
 //Importação Imagem
 import FundoL from '../assets/images/FundoL.png'
 
+//Exportação padrão
 export default function LoginImageBackground() {
   return (
 
