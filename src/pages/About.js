@@ -1,5 +1,5 @@
 //Importação padrão
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Button } from "react-native";
 //Importação do Style
 import { styles } from "../styles/styleSheet";
 //Importações React Navigation
@@ -33,6 +33,9 @@ export default function About() {
                 protagonista indiscutível. Van Gogh habilmente utiliza pinceladas expressivas e cores 
                 vibrantes para capturar a atmosfera única de uma noite estrelada.
               </Text>
+              <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' />
+              <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' />
+              <Button title="Home" onPress={() => navigation.navigate("Home")} color= 'black' />
             </View>
             
         </View>

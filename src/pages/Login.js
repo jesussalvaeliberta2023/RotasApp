@@ -20,6 +20,9 @@ export default function Login() {
     <View style={styles.container}>
       {/* Chamando a tela de Login */}
       <LoginBack />
+      <Button title="About" onPress={() => navigation.navigate("About")} color= 'black' />
+      <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' />
+      <Button title="Home" onPress={() => navigation.navigate("Home")} color= 'black' />
     </View>
 
   );
