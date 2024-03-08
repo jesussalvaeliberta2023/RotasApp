@@ -40,7 +40,7 @@ export default function Contact() {
         />
 
         {/* Botão para executar uma função */}
-        <Button title="Entrar" color="black" onPress={pressButton} />
+        <Button title="Enviar" color="black" onPress={pressButton} />
 
       </View>
     </View>
