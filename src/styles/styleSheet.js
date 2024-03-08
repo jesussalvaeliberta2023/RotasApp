@@ -110,9 +110,16 @@ export const styles = StyleSheet.create({
 
   buttons: {
     width: '100%',
-  }
+  },
+
+  button: {
+    backgroundColor: 'black',
+    width: '100%',
+  },
 
 });
+
+
 
 //Exportação padrão
 export default styles;

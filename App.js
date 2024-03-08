@@ -1,11 +1,11 @@
 // Importações Stack Navigation
-import { NavigationContainer, useNavigation } from "@react-navigation/native"
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // Importações das páginas
-import Home from "./src/pages/Home"
-import About from "./src/pages/About"
-import Contact from "./src/pages/Contact"
-import Login from "./src/pages/Login"
+import Home from "./src/pages/Home";
+import About from "./src/pages/About";
+import Contact from "./src/pages/Contact";
+import Login from "./src/pages/Login";
 
 // Criando uma instancia do Stack Navigator
 // Isso nos permite utilizar comandos para definir a navegação de aplicação

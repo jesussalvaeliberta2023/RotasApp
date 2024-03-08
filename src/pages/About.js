@@ -1,11 +1,12 @@
 //Importação padrão
-import { View, Text, Image, Button } from "react-native";
+import { View, Text, Image } from "react-native";
+import { Button } from "react-native-elements";
 //Importação do Style
 import { styles } from "../styles/styleSheet";
 //Importações React Navigation
 import { useNavigation } from "@react-navigation/native";
 //Importação Imagem
-import Quadro from '../assets/images/Quadro.jpg'
+import Quadro from '../assets/images/Quadro.jpg';
 
 //Exportação padrão
 export default function About() {
@@ -33,11 +34,14 @@ export default function About() {
                 protagonista indiscutível. Van Gogh habilmente utiliza pinceladas expressivas e cores 
                 vibrantes para capturar a atmosfera única de uma noite estrelada.
               </Text>
-              <Button title="Contact" onPress={() => navigation.navigate("Contact")} color= 'black' style={styles.buttons} />
-              <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' style={styles.buttons} />
-              <Button title="Home" onPress={() => navigation.navigate("Home")} color= 'black' style={styles.buttons} />
             </View>
-            
+        
+        </View>
+        <View style={styles.buttons} >
+          {/* Botões para viajar entre as páginas */}
+          <Button title="Contact" onPress={() => navigation.navigate("Contact")} buttonStyle={styles.button}/>
+          <Button title="Login" onPress={() => navigation.navigate("Login")} buttonStyle={styles.button}/>
+          <Button title="Home" onPress={() => navigation.navigate("Home")} buttonStyle={styles.button}/>
         </View>
       </View>
   

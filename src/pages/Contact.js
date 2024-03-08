@@ -1,5 +1,6 @@
 //Importação padrão
-import { View, TextInput, Button } from "react-native";
+import { View, TextInput } from "react-native";
+import { Button } from "react-native-elements";
 //Importação do Style
 import { styles } from "../styles/styleSheet";
 //Importações React Navigation
@@ -40,11 +41,15 @@ export default function Contact() {
         />
 
         {/* Botão para executar uma função */}
-        <Button title="Enviar" color="blue" onPress={pressButton} />
+        <Button title="Enviar" color= 'black' onPress={pressButton} />
 
-        <Button title="About" onPress={() => navigation.navigate("About")} color= 'black' style={styles.buttons}/>
-        <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' style={styles.buttons}/>
-        <Button title="Home" onPress={() => navigation.navigate("Home")} color= 'black' style={styles.buttons}/>
+      </View>
+
+      <View style={styles.buttons} >
+          {/* Botões para viajar entre as páginas */}
+          <Button title="About" onPress={() => navigation.navigate("About")} buttonStyle={styles.button}/>
+          <Button title="Login" onPress={() => navigation.navigate("Login")} buttonStyle={styles.button}/>
+          <Button title="Home" onPress={() => navigation.navigate("Home")} buttonStyle={styles.button}/>
       </View>
     </View>
 
