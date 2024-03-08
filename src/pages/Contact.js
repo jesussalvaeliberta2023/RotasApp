@@ -40,7 +40,7 @@ export default function Contact() {
         />
 
         {/* Botão para executar uma função */}
-        <Button title="Enviar" color="black" onPress={pressButton} />
+        <Button title="Enviar" color="blue" onPress={pressButton} />
 
         <Button title="About" onPress={() => navigation.navigate("About")} color= 'black' style={styles.buttons}/>
         <Button title="Login" onPress={() => navigation.navigate("Login")} color= 'black' style={styles.buttons}/>

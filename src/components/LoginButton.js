@@ -2,6 +2,8 @@
 import { View, Button } from 'react-native';
 //Importação do Style
 import styles from '../styles/styleSheet';
+//Importações React Navigation
+import { useNavigation } from "@react-navigation/native";
 
 //Exportação padrão
 export default function LoginButton() {
@@ -10,6 +12,9 @@ export default function LoginButton() {
   pressButton = () => {
     alert("Uhm essa função ainda não está pronta :' (")
   }
+
+  //Variável que permite que você navegue entre as telas
+  const navigation = useNavigation();
   
   // Retorna e Renderiza tudo o que está dentro dele
   return (
